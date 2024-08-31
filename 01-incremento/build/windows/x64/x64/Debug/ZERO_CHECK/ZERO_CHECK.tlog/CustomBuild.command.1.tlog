@@ -1,0 +1,10 @@
+^C:\USERS\ALUNO\DESKTOP\FLUTTER_APPLICATION_1\BUILD\WINDOWS\X64\CMAKEFILES\ACE3D1E85F0E451F5008FC6D463D5B61\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/aluno/Desktop/flutter_application_1/windows -BC:/Users/aluno/Desktop/flutter_application_1/build/windows/x64 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/aluno/Desktop/flutter_application_1/build/windows/x64/flutter_application_1.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
